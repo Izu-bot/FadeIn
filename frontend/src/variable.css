@@ -1,0 +1,15 @@
+:root {
+    --primary-background-color: #0E0E11;
+    --second-background-color: #1A1A1F;
+
+    --primary-blue: #4A90E2;
+    --second-blue: #3C7DC5;
+    
+    --primary-text-color: #E5E5E5;
+    --second-text-color: #9A9A9A;
+
+    /* Cores pouco usadas */
+    --purple: #7A75DC;
+    --grey: #D9D9D9;
+    --black: #121212;
+}

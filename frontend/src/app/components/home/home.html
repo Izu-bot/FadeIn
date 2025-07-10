@@ -1,0 +1,58 @@
+<nav class="navbar">
+    <h1>FadeIn</h1>
+</nav>
+<hr>
+<main class="hero">
+    <section>
+        <h1>
+            Transform Your Barbershop<br />with Smart Scheduling
+        </h1>
+        <p>Join thousands of barbers who've simplified their booking process and<br />grown their business with FadeIn
+        </p>
+        <a href="">Get Started</a>
+    </section>
+    <figure>
+        <img [src]="image" alt="Image of a barber cutting a client's hair">
+    </figure>
+</main>
+<hr>
+<section class="features-step">
+    <h2>Everything You Need To Run Your Business</h2>
+    <div class="feature-step">
+        @for (feature of features; track feature.title) {
+        <div>
+            <img [src]="feature.icon" alt="Icons" class="icon-feature">
+            <h3 class="title">{{ feature.title }}</h3>
+            <p class="description">{{ feature.description }}</p>
+        </div>
+        }
+    </div>
+</section>
+<hr>
+<section class="features-step">
+    <h2>Get Started In Minutes</h2>
+    <div class="feature-step">
+        @for (step of steps; track step.title) {
+        <div>
+            <h3 class="number-step">{{ step.number }}</h3>
+            <h4 class="title">{{ step.title }}</h4>
+            <p class="description">{{ step.description }}</p>
+        </div>
+        }
+    </div>
+</section>
+<hr>
+<footer class="join-now">
+    <div class="price">
+        <p>Limited-time introductory offer.</p>
+        <h1>$10/month</h1>
+        <h5>$20/month</h5>
+    </div>
+    <div class="list-feature">
+        <p>Get access to FadeIn and transform your barbershop</p>
+            @for (listFeature of listFeatures; track $index) {
+                <p>{{listFeature}}<p>
+            }
+    </div>
+    <a href="">Join Now</a>
+</footer>
